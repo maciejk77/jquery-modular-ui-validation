@@ -12,7 +12,7 @@ Please complete the coding assignment within a maximum of 24 hours.
 
 **Coding Assignment:**
 
-Create a simple login/registration page like the image example 'login-page.png'.
+Create a responsive login/registration page like the image example 'login-page.png'.
 Write a login/registration page in HTML5/CSS & JavaScript.
 The JavaScript should be well structured, suitably commented.
 
@@ -31,5 +31,3 @@ The HTML & CSS code should be valid and has to meet the W3C standard.
 The form will need a validation before a user can login.
 In order to do the validation complete the JavaScript.
 Add an error message if the email or password are not correct.
-
-
