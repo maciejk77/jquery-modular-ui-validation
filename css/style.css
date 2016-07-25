@@ -118,10 +118,10 @@ span {
 }
 
 #checkboxTwo {
-  display: inline;
-  width: 20px;
-  height: 20px;
   border: 1px #d1cccc solid;
+  display: inline;
+  height: 20px;
+  width: 20px;
 }
 
 #login {
@@ -134,10 +134,10 @@ span {
   background-color: white;
   border: 1px solid #d1cccc;
   height: 300px;
-  margin: 20px auto;
+  margin: 30px auto;
   max-width: 300px;
   padding: 30px 20px;
-  width: 65%;
+  width: 100%;
 }
 
 #account-box {
@@ -166,7 +166,11 @@ button {
 }
 
 @media (min-width: 768px) {
-
+  #login-box, #account-box {
+    display: inline-block;
+    margin-left: 30px;
+  }
 
 }
 
+/* Tried floats, could easily be done with Bootstrap grid */
