@@ -90,3 +90,70 @@ input {
   border-radius: 0;
 }
 
+/* --------------  MY CLASSES BELOW ----------------------------- */
+
+h1,h2 {
+  margin-bottom: 10px;
+}
+
+hr {
+  color: #d1cccc;
+  border: 1px solid;
+  margin-bottom: 20px;
+}
+
+input[type=text] {
+  height: 35px;
+  margin-bottom: 20px;
+  width: 98%;
+  border: 1px #d1cccc solid;
+}
+
+input[type=checkbox] {}
+
+#login {
+  font-size: 16px;
+  margin: 100px auto;
+  min-width: 400px; /* just in case Chrome's min is 400px anyway */
+}
+
+#login-box, #account-box {
+  background-color: white;
+  border: 1px solid #d1cccc;
+  height: 300px;
+  margin: 20px auto;
+  max-width: 300px;
+  padding: 30px 20px;
+  width: 65%;
+}
+
+#account-box {
+  line-height: 16px;
+}
+
+#account-box button {
+  margin-top: 160px;
+}
+
+#account-box p {
+  font-size: 15px;
+}
+
+button {
+  background-color: #00bbff;
+  border: 2px #0099ff solid;
+  border-radius: 3px;
+  color: white;
+  display: block;
+  font-size: 14px;
+  height: 40px;
+  margin-top: 20px;
+  padding: 1px;
+  width: 60%;
+}
+
+@media (min-width: 768px) {
+
+
+}
+
