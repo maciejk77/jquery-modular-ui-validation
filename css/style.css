@@ -103,10 +103,12 @@ hr {
 }
 
 input[type=text] {
+  border: 1px #d1cccc solid;
+  box-sizing: border-box;
   height: 35px;
   margin-bottom: 20px;
+  padding: 15px;
   width: 98%;
-  border: 1px #d1cccc solid;
 }
 
 input[type=checkbox] {
