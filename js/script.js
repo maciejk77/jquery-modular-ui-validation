@@ -17,22 +17,22 @@ var app = app || {};
 
 			// Validate form before submit
 			$('#login form').submit(function(event) {
-
+				
 				//Email and password validation
-      			if (!(app.validation.email($("#email").val()) && app.validation.password($("#id").val()))) {
+      	if (!(app.validation.email($("#email").val()) && app.validation.password($("#id").val()))) {
 
-		      	//Preventing default event clickthgrough if validation above not successful
-	        	event.preventDefault();
-    
-       			//Email error message to appear if incorrect email address provided 
-	         	if(!app.validation.email($("#email").val())){
-	         		app.errorMsg.email();
-	         	}
+	      	//Preventing default event clickthgrough if validation above not successful
+        	event.preventDefault();
+  
+     			//Email error message to appear if incorrect email address provided 
+         	if(!app.validation.email($("#email").val())) {
+         		app.errorMsg.email();
+         	}
 
-		        //Password error message to appear if incorrect password provided 
-		        if(!app.validation.password($("#id").val())) {
-		        	app.errorMsg.password();
-		        };
+	        //Password error message to appear if incorrect password provided 
+	        if(!app.validation.password($("#id").val())) {
+	        	app.errorMsg.password();
+	        };
 				};
 			});
 		}
