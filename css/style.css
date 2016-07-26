@@ -1,188 +1,163 @@
 /*****************************************************************
  * Fonts
  *****************************************************************/
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 /*****************************************************************
  * CSS Resets
  *****************************************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
 
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
 html {
-  line-height: 1;
+    line-height: 1;
+    height: 100%;
 }
-
-ol, ul {
-  list-style: none;
+ol,
+ul {
+    list-style: none;
 }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
 a img {
-  border: none;
+    border: none;
 }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
 /*****************************************************************
  * Base Root styles
  *****************************************************************/
 
 body {
-  background-color: #e9eff3;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 62.5%;
-  color: #222;
-  -webkit-text-size-adjust: 100%;
+    background-color: #e9eff3;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #222;
+    -webkit-text-size-adjust: 100%;
+    height: 100%;
 }
-
 /*****************************************************************
  * Typography
  *****************************************************************/
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
 a {
-  color: #222;
+    color: #222;
 }
-
 input {
-  border-radius: 0;
+    border-radius: 0;
 }
-
 /* --------------  MY CLASSES BELOW ----------------------------- */
 
-h1,h2 {
-  margin-bottom: 10px;
+h1,
+h2 {
+    margin-bottom: 10px;
 }
-
 hr {
-  color: #d1cccc;
-  border: 1px solid;
-  margin-bottom: 20px;
+    color: #d1cccc;
+    border: 1px solid;
+    margin-bottom: 20px;
 }
-
 p {
-  margin: 2px 0;
+    margin: 2px 0;
 }
-
 input[type=text] {
-  border: 1px #d1cccc solid;
-  box-sizing: border-box;
-  height: 35px;
-  margin-bottom: 20px;
-  padding: 15px;
-  width: 98%;
+    border: 1px #d1cccc solid;
+    box-sizing: border-box;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 98%;
 }
-
 input[type=checkbox] {
-  visibility: hidden;  
+    visibility: hidden;
 }
-
 span {
-  margin-left: 10px;
+    margin-left: 10px;
 }
-
 #checkboxTwo {
-  border: 1px #d1cccc solid;
-  display: inline;
-  height: 20px;
-  width: 20px;
+    border: 1px #d1cccc solid;
+    display: inline;
+    height: 20px;
+    width: 20px;
 }
-
 #login {
-  font-size: 16px;
-  margin: 100px auto;
-  min-width: 400px; /* just in case Chrome's min is 400px anyway */
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 800px;
+    overflow: hidden;
+    padding-top: 150px;
+    width: 100%;
+    overflow: hidden;
 }
-
-#login-box, #account-box {
-  background-color: white;
-  border: 1px solid #d1cccc;
-  height: 300px;
-  margin: 30px auto;
-  max-width: 300px;
-  padding: 30px 20px;
-  width: 100%;
-}
-
+#login-box,
 #account-box {
-  line-height: 16px;
+    background-color: white;
+    border: 1px solid #d1cccc;
+    height: 300px;
+    max-width: 300px;
+    padding: 30px 20px;
+    width: 100%;
+    margin: 0 10px;
+    position: relative;
 }
-
+#login-box {
+    float: left;
+}
+#account-box {
+    float: right;
+}
+#account-box {
+    line-height: 16px;
+}
 #account-box button {
-  margin-top: 160px;
+    margin-top: 160px;
 }
-
 #account-box p {
-  font-size: 15px;
+    font-size: 15px;
 }
-
 button {
-  background-color: #00bbff;
-  border: 2px #0099ff solid;
-  border-radius: 3px;
-  color: white;
-  display: block;
-  font-size: 14px;
-  height: 40px;
-  margin-top: 20px;
-  padding: 1px;
-  width: 60%;
+    background-color: #00bbff;
+    border: 2px #0099ff solid;
+    border-radius: 3px;
+    color: white;
+    display: block;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 1px;
+    width: 60%;
+    position: absolute;
+    bottom: 35px;
 }
-
-.email-error-msg, 
+.email-error-msg,
 .password-error-msg {
-  color: red;
-
+    color: red;
 }
-
-@media (min-width: 768px) {
-  #login-box, #account-box {
-    display: inline-block;
-    margin-left: 30px;
-  }
-
+.email-error {
+    display: none;
 }
-
-/* Tried floats, could easily be done with Bootstrap grid */
+@media (max-width: 768px) {
+    #login-box,
+    #account-box {
+        float: none;
+        margin: 15px auto;
+    }
+}
