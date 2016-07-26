@@ -34,15 +34,19 @@
     <h1>I HAVE A LOGIN</h1>
     <hr />
     
-    <h2>Email&#42;</h2>
-    <input id="email" type="text" name="email">    
-    
-    <h2>Password&#42;</h2>
-    <input type="text" name="password">
-    
-    <div id="checkboxTwo">
-      <input id="password" type="checkbox" name="checkbox">
-    </div>
+    <form>
+      <h2>Email&#42;</h2>
+      <input id="email" type="text" name="email">
+      <div class="email-error-msg"></div>     
+      
+      <h2>Password&#42;</h2>
+      <input id="id" type="text" name="password">
+      <div class="password-error-msg"></div> 
+    </form>
+
+      <div id="checkboxTwo">
+        <input type="checkbox" name="checkbox">
+      </div>
     
     <span>Stay signed in</span>
     <button>SIGN IN</button>
