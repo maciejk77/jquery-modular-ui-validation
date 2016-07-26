@@ -52,13 +52,11 @@ var app = app || {};
 	},
 	app.errorMsg = {
 		email: function(id) {
-			$(".email-error").css("visibility", "visible");
-			$(".email-error").fadeIn("slow");
+			$(".email-error").css("visibility", "visible").fadeIn("slow");
 		},
 
 		password: function(id) {
-	    $(".password-error").css("visibility", "visible");
-			$(".password-error").fadeIn("slow");
+	    $(".password-error").css("visibility", "visible").fadeIn("slow");
 		}
 	}
 	app.docOnReady = {
