@@ -68,7 +68,7 @@ input {
 
 h1,
 h2 {
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 hr {
     color: #d1cccc;
@@ -82,7 +82,7 @@ input[type=text] {
     border: 1px #d1cccc solid;
     box-sizing: border-box;
     height: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     padding: 15px;
     width: 98%;
 }
@@ -90,7 +90,7 @@ input[type=checkbox] {
     visibility: hidden;
 }
 span {
-    margin-left: 10px;
+    margin: 10px;
 }
 #checkboxTwo {
     border: 1px #d1cccc solid;
@@ -101,7 +101,7 @@ span {
 #login {
     font-size: 16px;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 724px;
     overflow: hidden;
     padding-top: 150px;
     width: 100%;
@@ -141,23 +141,26 @@ button {
     display: block;
     font-size: 14px;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 1px;
     width: 60%;
     position: absolute;
-    bottom: 35px;
+    bottom: 25px;
 }
 .email-error-msg,
 .password-error-msg {
     color: red;
+    font-size: 13px;
 }
-.email-error {
-    display: none;
+.email-error,
+.password-error {
+    visibility: hidden;
+    margin-bottom: 10px;
 }
 @media (max-width: 768px) {
     #login-box,
     #account-box {
         float: none;
-        margin: 15px auto;
+        margin: 20px auto;
     }
 }

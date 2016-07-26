@@ -17,13 +17,12 @@ var app = app || {};
 
 			// Validate form before submit
 			$('#login form').submit(function(event) {
-	
+
 				//Email and password validation
       			if (!(app.validation.email($("#email").val()) && app.validation.password($("#id").val()))) {
 
 		      	//Preventing default event clickthgrough if validation above not successful
 	        	event.preventDefault();
-	        	$(".email-error").css("display", "none");
     
        			//Email error message to appear if incorrect email address provided 
 	         	if(!app.validation.email($("#email").val())){
@@ -51,13 +50,14 @@ var app = app || {};
 				return true;
 		}
 	},
-	
 	app.errorMsg = {
 		email: function(id) {
+			$(".email-error").css("visibility", "visible");
 			$(".email-error").fadeIn("slow");
 		},
 
 		password: function(id) {
+	    $(".password-error").css("visibility", "visible");
 			$(".password-error").fadeIn("slow");
 		}
 	}
