@@ -102,6 +102,10 @@ hr {
   margin-bottom: 20px;
 }
 
+p {
+  margin: 2px 0;
+}
+
 input[type=text] {
   border: 1px #d1cccc solid;
   box-sizing: border-box;
@@ -165,6 +169,12 @@ button {
   margin-top: 20px;
   padding: 1px;
   width: 60%;
+}
+
+.email-error-msg, 
+.password-error-msg {
+  color: red;
+
 }
 
 @media (min-width: 768px) {
