@@ -23,6 +23,6 @@ The form will need a validation before a user can login.
 In order to do the validation complete the JavaScript.
 Add an error message if the email or password are not correct.
 
-####Preview
+#### Preview
 
 ![jquery-modular-ui-validation screenshot](https://github.com/maciejk77/jquery-modular-ui-validation/blob/master/img/screenshot.png?raw=true)
